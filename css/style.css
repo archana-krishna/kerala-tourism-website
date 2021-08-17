@@ -20,8 +20,30 @@
  .fcontainer{
      text-decoration: none;
  }
+ .fspace{
+     padding-top: 8em;
+ }
+ .bgfooter{
+     background-color: rgb(9, 53, 68);
+ }
 
  /* footer */
+
+
+/* login */
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(97, 17, 182), rgb(140, 180, 250));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(133, 32, 241), rgb(71, 138, 253))
+  }
+
+ /* login */
 
 
 /* district page */
@@ -42,7 +64,7 @@
     height: 85vh;
     min-height: 300px;
     background: no-repeat scroll center scroll;
-    -webkit-backgrround-size:cover;
+    -webkit-backgrround-size:object-fit;
     background-size: cover;
 }
 
@@ -65,8 +87,8 @@
     
 }
 
-.carousel-caption h5{
-    font-size: 100px;
+.carousel-caption h6{
+    font-size: 90px;
     font-weight: 700px;
 }
 
@@ -77,18 +99,17 @@
 
 
 /* Signup page */
-.carousel-inner carousel-item{
-    object-fit: cover;
-}
+
 
 .bg-image {
     /* The image used */
-    background-image: url('/image/ganesh-ravikumar-i1QfTcVmPlI-unsplash.jpg');
+    background-image: url('/image/ambalapuzha.jpg');
+   
 
   
     /* Full height */
     
-    height: 175vh;
+    height: 100vh;
     min-height: 300px;
   
     /* Center and scale the image nicely */
@@ -101,7 +122,7 @@
 
     margin: 30px;
     border: 1px solid black; 
-   opacity: 0.6;
+   opacity: 0.8;
    /* background-color: rgba(0, 0, 0, 0.5) */
 }
 
