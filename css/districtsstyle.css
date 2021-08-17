@@ -1,0 +1,32 @@
+
+
+.myparent{
+display: flex;
+background-color:rgb(182, 190, 230);;
+padding-left: 3em;
+padding-top: 3em;
+padding-right: 1em;
+}
+.child{
+    height: 25%;
+    width: 50%;
+}
+.pchild{
+    height: 25%;
+    width: 50%;
+}
+
+.tmargin{
+    padding:  4em;
+    background-color:rgba(215, 235, 248, 0.959);
+    
+}
+.bcolor{
+    background-color: rgba(3, 14, 163, 0.815);
+    color: white;
+}
+
+
+
+
+
