@@ -28,7 +28,7 @@ function validation()
 {
   //username
    if (usrname.value.trim()=="") {
-      document.getElementById('username').innerHTML="** this feild cannot be empty";
+      document.getElementById('username').innerHTML="** this field cannot be empty";
     
     }
    else if(usrname.value.length<=2||usrname.value.length>20) {
@@ -43,17 +43,17 @@ function validation()
     //mobile number
     
     if (mobile.value=="") {
-        document.getElementById('mobileno').innerHTML="** this feild cannot be empty";
+        document.getElementById('mobileno').innerHTML="** this field cannot be empty";
     }else if(regExpMob.test(mobile.value)){
         document.getElementById('mobileno').innerHTML="";
     }else{
-        document.getElementById('mobileno').innerHTML="** format not accepted.. omly (xxx-xxx-xxx or xxx.xxx.xxxx or xxx xxx xxxx)";
+        document.getElementById('mobileno').innerHTML="** format not accepted.Only (xxx-xxx-xxx or xxx.xxx.xxxx or xxx xxx xxxx)";
     }
 
 
     //Email id
     if (emails.value.trim()=="" ) {
-        document.getElementById('emailId').innerHTML="**this feild cannot be empty";
+        document.getElementById('emailId').innerHTML="**this field cannot be empty";
     }
    else if(!regexp.test(emails.value)) {
         document.getElementById('emailId').innerHTML="Invalid email id ";
@@ -63,7 +63,7 @@ function validation()
     }
     //password
      if (psw.value.trim()=="") {
-         document.getElementById('pass').innerHTML="**this feild cannot be empty";
+         document.getElementById('pass').innerHTML="**this field cannot be empty";
       
     }else{
         document.getElementById('pass').innerHTML="";
@@ -74,7 +74,7 @@ function validation()
    
     //confirm password
     if (conpsw.value.trim()=="") {
-        document.getElementById('conpass').innerHTML="**this feild cannot be empty";
+        document.getElementById('conpass').innerHTML="**this field cannot be empty";
         return false
     }else if(conpsw.value!=psw.value) {
       document.getElementById('conpass').innerHTML="password not matching";
@@ -98,15 +98,15 @@ function trigger(){
       if(num==1){
         weak.classList.add("active");
         text.style.display = "block";
-        text.textContent = "Your password is too week"
-        text.textContent=" password should contain of aleast 8 characters A-Z a-z 0-9 symbol";
+        // text.textContent = "Your password is too week"
+        text.textContent=" Your password is weak.Should contain  aleast 8 characters A-Z a-z 0-9 symbol";
         text.classList.add("weak");
         return false;
       }
       if(num==2){
         medium.classList.add("active");
-        text.textContent = "Your password is medium";
-        text.textContent=" password should contain of atleast 8 character A-Z a-z 0-9 symbol";
+        // text.textContent = "Your password is medium";
+        text.textContent=" Your password medium. Should contain atleast 8 character A-Z a-z 0-9 symbol";
         text.classList.add("medium");
       }else{
         medium.classList.remove("active");
@@ -136,8 +136,8 @@ function trigger(){
 function  loginValidation()
  {
     if (emailx.value.trim()=="" || passwordx.value.trim()=="") {
-        document.getElementById('emailerror').innerHTML="**this feild cannot be empty";
-        document.getElementById('passError').innerHTML="**this feild cannot be empty";
+        document.getElementById('emailerror').innerHTML="**this field cannot be empty";
+        document.getElementById('passError').innerHTML="**this field cannot be empty";
         return false
     }
    else if(!regexp.test(emailx.value)) {
