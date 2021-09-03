@@ -60,27 +60,66 @@
                   <div class="card-body p-5" style="background-color: black;">
                     <h2 class="text-uppercase text-center mb-5" style="font-weight: bolder; color:wheat;">Create an account</h2>
       
-                    <form>
+                    <!-- <form action onsubmit=validation()> -->
+                      <form action="index.html"  onsubmit="return validation()">
                     
-      
+
+                      <!-- ursername -->
+
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                        <input type="text"  class="form-control form-control-lg" id="usrname" autocomplete="off"/>
+                        <!-- <input type="text" id="form3Example1cg  usrname" class="form-control form-control-lg" autocomplete="off"/> -->
                         <label class="form-label" for="form3Example1cg">Your Name</label>
+                        <span id="username" class="text-danger font-weight-bold"></span>
                       </div>
+
+                      <!-- Mobile Number -->
+
+                      <div class="form-outline mb-4">
+                        <input type="text" id="mobile" class="form-control form-control-lg" name="mobile" autocomplete="off"/>
+                        <!-- <input type="text" id="form3Example1cg mobile" class="form-control form-control-lg" name="mobile" autocomplete="off"/> -->
+                        <label class="form-label" for="form3Example1cg  mobile" >Mobile Number</label>
+                        <span id="mobileno" class="text-danger font-weight-bold"></span>
+                      </div>
+
+
+                       <!-- Email -->
+
+                      <div class="form-outline mb-4 feild">
+                        <input type="email" id="emails" class="form-control form-control-lg"name="email" autocomplete="off"  />
+                        <!-- <input type="email" id="form3Example3cg emails" class="form-control form-control-lg"name="email" /> -->
+                        <label class="form-label" for="form3Example3cg" >Your Email</label>
+                        <span id="emailId" class="text-danger font-weight-bold"></span>
+                        <span id="error" class="text-success font-weight-bold"></span>
+                      </div>
+
+                      <!-- Password -->
+      
+                      <div class="form-outline mb-4  feild">
+                        <input onkeyup="trigger()" type="password" id="psw" class="form-control form-control-lg" name="password"/>
+                        
+                        <!-- <input type="password" id="form3Example4cg " class="form-control form-control-lg" name="password" /> -->
+                        <label class="form-label" for="form3Example4cg" >Password</label>
+                        <span id="pass" class="text-danger font-weight-bold"></span>
+                        <!-- <span class="showBtn">SHOW</span> -->
+                        
+                      
+                      <div class="indicator">
+                        <span class="weak"></span>
+                        <span class="medium"></span>
+                        <span class="strong"></span>
+                     </div>
+                     <div class="text"></div>
+                    </div>
+         
+         
+                      <!-- Confirm Password -->
       
                       <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example3cg">Your Email</label>
-                      </div>
-      
-                      <div class="form-outline mb-4">
-                        <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example4cg">Password</label>
-                      </div>
-      
-                      <div class="form-outline mb-4">
-                        <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                        <input type="password" id="conpsw" class="form-control form-control-lg" name= "conpass"/>
+                        <!-- <input type="password" id="form3Example4cdg conpsw" class="form-control form-control-lg" name= "conpass"/> -->
+                        <label class="form-label" for="form3Example4cdg" >Confirm your password</label>
+                        <span id="conpass" class="text-danger font-weight-bold"></span>
                       </div>
       
                       <div class="form-check d-flex justify-content-center mb-5">
@@ -96,7 +135,7 @@
                       </div>
       
                       <div class="d-flex justify-content-center" style="opacity: 0.9;">
-                        <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="font-weight: bolder; ">Register</button>
+                        <button type="submit" id="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="font-weight: bolder; ">Register</button>
                       </div>
       
                       <p class="text-center text-muted mt-5 mb-0" style="font-weight: bolder;">Have already an account? <a href="login.html" class="fw-bold text-body"><u style="font-weight: bolder; color:seagreen;">Login here</u></a></p>
@@ -114,6 +153,7 @@
       <!-- Sign up form -->
  <!-- footer -->
  <section>
+   <br>
    <br>
    <br>
    <br>
@@ -230,5 +270,8 @@
 </section>
 <!-- footer -->
       
+
+<script src="./jsscript.js"></script>
+
 </body>
 </html>
